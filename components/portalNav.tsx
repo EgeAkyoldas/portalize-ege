@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import SearchBar from "../components/searchBar";
+import SearchBar from "../components/SearchBar";
 
 const PortalNav = () => {
   const [windowDimension, setWindowDimension] = useState(null);
