@@ -56,7 +56,7 @@ const selectedRangeStyle = {
 
   return (
     <div
-      className="w-3/5 h-2 bg-gray-200 rounded-full relative cursor-pointer"
+      className="w-3/5 h-2 bg-gray-50 rounded-full relative"
       ref={sliderRef}
     >
       <div
