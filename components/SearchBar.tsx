@@ -1,0 +1,33 @@
+import React, { useState } from "react";
+
+interface SearchBarProps {
+  onSearch: (searchText: string) => void;
+}
+
+const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
+  const [searchText, setSearchText] = useState("");
+
+  const handleSearch = () => {
+    onSearch(searchText);
+  };
+
+  return (
+    <div className="bg-[#282828] flex flex-row justify-between w-96 h-8 items-center pl-6 pr-4 rounded-lg">
+      <input
+        type="text"
+        placeholder="Search"
+        value={searchText}
+        onChange={(e) => setSearchText(e.target.value)}
+        className="text-xs font-Gilroy font-light text-white/35 w-full bg-transparent outline-none"
+      />
+      <button onClick={handleSearch} className="min-h-0 min-w-0 w-6">
+        <img
+          src="https://file.rendit.io/n/GcJTinFkXKSA8dPj5vAl.svg"
+          alt="Search Icon"
+        />
+      </button>
+    </div>
+  );
+};
+
+export default SearchBar;

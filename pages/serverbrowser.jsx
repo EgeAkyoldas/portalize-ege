@@ -4,7 +4,7 @@ import GameSlider from '../components/gameslider';
 import FeaturedSlider from '../components/featuredslider';
 import FeaturedEvent from '../components/featuredEvent';
 import PublicSpaces from '../components/publicSpaces';
-
+import PortalNav from '../components/portalNav';
 
 
 
@@ -15,6 +15,9 @@ const PortalizeSB = ({data}) => {
     <Fragment>
       <Navbar/>
         <main className='overflow-hidden'>
+          <div>
+            <PortalNav/>
+          </div>
             <div className=''>
                 <GameSlider/>
             </div>
