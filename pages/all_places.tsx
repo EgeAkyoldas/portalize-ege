@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Places from '../components/places';
 import Tags from '../components/tags';
 import SearchBar from '../components/SearchBar';
+import AgeSlider from '../components/AgeSlider';
 import { InferGetServerSidePropsType, GetServerSideProps } from 'next';
 
 
@@ -69,6 +70,7 @@ const AllPlaces = ({ repo }: InferGetServerSidePropsType<typeof getServerSidePro
                 <Tags title="Education" />
                 <Tags title="Shop" />
             </div>
+            <AgeSlider/>
             <SearchBar onSearch={handleSearch} />
           </div>
         </div>

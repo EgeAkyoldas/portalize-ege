@@ -12,7 +12,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   };
 
   return (
-    <div className="bg-[#282828] flex flex-row justify-between w-96 h-auto items-center pl-6 pr-4 rounded-lg">
+    <div className="bg-[#282828] flex flex-row justify-between w-full h-auto items-center pl-6 pr-4 rounded-lg">
       <input
         type="text"
         placeholder="Search"
