@@ -12,13 +12,13 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   };
 
   return (
-    <div className="bg-[#282828] flex flex-row justify-between w-96 h-8 items-center pl-6 pr-4 rounded-lg">
+    <div className="bg-[#282828] flex flex-row justify-between w-96 h-auto items-center pl-6 pr-4 rounded-lg">
       <input
         type="text"
         placeholder="Search"
         value={searchText}
         onChange={(e) => setSearchText(e.target.value)}
-        className="text-xs font-Gilroy font-light text-white/35 w-full bg-transparent outline-none"
+        className="text-xl font-Gilroy font-light text-white/35 w-full bg-transparent outline-none py-3"
       />
       <button onClick={handleSearch} className="min-h-0 min-w-0 w-6">
         <img

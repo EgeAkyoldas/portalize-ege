@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Places from '../components/places';
 import Tags from '../components/tags';
+import SearchBar from '../components/SearchBar';
 import { InferGetServerSidePropsType, GetServerSideProps } from 'next';
 
 
@@ -34,6 +35,8 @@ export const getServerSideProps: GetServerSideProps<{
     }
   };
 
+  
+
 const AllPlaces = ({ repo }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const [placesData, setPlacesData] = useState<Place[]>([]);
 
@@ -43,21 +46,30 @@ const AllPlaces = ({ repo }: InferGetServerSidePropsType<typeof getServerSidePro
     }
   }, [repo]);
 
+
+    const handleSearch = (searchText) => {
+      console.log("Search text:", searchText);
+      // Perform search logic here
+    }; 
+
   return (
     <Fragment>
       <Navbar />
-      <main className='overflow-hidden'>
+      <main className='overflow-hidden pt-14'>
         <div className="bg-[#171717] flex flex-col gap-2 w-full pt-3 pb-32 px-8 rounded-lg">
           <div className="flex flex-row justify-between ml-3 w-1/2 items-center">
-            <div className="text-xs font-['Gilroy'] font-light text-white">Tags</div>
-            <div className="text-xs font-['Gilroy'] font-light text-white">Age</div>
+            <div className="text-xl font-['Gilroy'] font-light text-white">Tags</div>
+            <div className="text-xl font-['Gilroy'] font-light text-white">Age</div>
           </div>
-          <div className='flex flex-row gap-3'>
-            <Tags title="Movie" />
-            <Tags title="Art" />
-            <Tags title="Chat" />
-            <Tags title="Education" />
-            <Tags title="Shop" />
+          <div className='flex flex-row gap-5 items-center h-full'>
+            <div className='flex flex-row gap-3'>
+                <Tags title="Movie" />
+                <Tags title="Art" />
+                <Tags title="Chat" />
+                <Tags title="Education" />
+                <Tags title="Shop" />
+            </div>
+            <SearchBar onSearch={handleSearch} />
           </div>
         </div>
         <div className='flex flex-col gap-10'>

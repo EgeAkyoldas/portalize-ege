@@ -26,7 +26,7 @@ const Tags: React.FC<TagsProps> = ({ title }) => {
         transition: "background-color 0.2s ease",
       }}
     >
-      <div className="font-['Gilroy'] font-light text-white px-5 py-2">{title}</div>
+      <div className="font-['Gilroy'] font-light text-white px-14 py-4">{title}</div>
     </button>
   );
 };
