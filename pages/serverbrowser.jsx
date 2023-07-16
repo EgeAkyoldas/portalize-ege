@@ -30,8 +30,8 @@ const PortalizeSB = ({data}) => {
               <h2 className='relative text-5xl left-14 w-18 mb-7'>Featured Event</h2>
               <FeaturedEvent/>
             </div>
-            <div className=' w-screen mr-0 overflow-visible'>
-              <h2 className='relative text-5xl left-14 w-18 mb-7 gap-10'>Public Spaces</h2>
+            <div className=' w-screen mr-0 overflow-visible items-center'>
+              <h2 className='relative text-5xl left-14 w-18 mb-7 mt-7 gap-10'>Public Spaces</h2>
               <PublicSpaces/>              
             </div>
             <div className="whitespace-nowrap text-sm font-['Gilroy'] font-bold text-white w-full text-center py-8 mb-4">
