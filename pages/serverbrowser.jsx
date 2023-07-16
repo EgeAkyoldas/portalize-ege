@@ -19,19 +19,19 @@ const PortalizeSB = ({data}) => {
                 <GameSlider/>
             </div>
             <div className=' h-fit '>
-              <h2 className='relative text-5xl left-14 w-18 mb-7'>Continue</h2>
+              <h2 className='relative text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-5xl text-center 2xl:text-left 2xl:pl-14  mb-7'>Continue</h2>
               <FeaturedSlider/>
             </div>
             <div className=' h-fit'>
-              <h2 className='relative text-5xl left-14 w-18 mb-7'>Community Featured</h2>
+              <h2 className='relative text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-5xl text-center 2xl:text-left 2xl:pl-14  mb-7'>Community Featured</h2>
               <FeaturedSlider/>
             </div>
             <div className=' h-fit'>
-              <h2 className='relative text-5xl left-14 w-18 mb-7'>Featured Event</h2>
+              <h2 className='relative text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-5xl text-center 2xl:text-left 2xl:pl-14  mb-7'>Featured Event</h2>
               <FeaturedEvent/>
             </div>
             <div className=' w-screen mr-0 overflow-visible items-center'>
-              <h2 className='relative text-5xl left-14 w-18 mb-7 mt-7 gap-10'>Public Spaces</h2>
+              <h2 className='relative text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-5xl text-center 2xl:text-left 2xl:pl-14 mt-7 mb-7'>Public Spaces</h2>
               <PublicSpaces/>              
             </div>
             <div className="whitespace-nowrap text-sm font-['Gilroy'] font-bold text-white w-full text-center py-8 mb-4">
