@@ -57,7 +57,7 @@ const AllPlaces = ({ repo }: InferGetServerSidePropsType<typeof getServerSidePro
   return (
     <Fragment>
       <Navbar />
-      <main className='overflow-hidden pt-14 px-12 mb-14'>
+      <main className='overflow-hidden pt-8 px-12 mb-14'>
         <div className="bg-[#171717] flex flex-col gap-2 w-full pt-3 pb-12 px-8 rounded-lg">
           <div className="flex flex-row justify-between ml-3 w-1/2 items-center">
             <div className="text-xl font-['Gilroy'] font-light text-white">Tags</div>

@@ -73,26 +73,28 @@ const PortalNav = () => {
 
         <div id="header" className={`w-screen !z-50 ${stickyClass}`}>
           <div
-            className={`bg-base-100 flex flex-row-reverse justify-end md:flex-row pt-8 pb-4 px-4 gap-0 md:gap-10 md:w-screen md:justify-between md:px-20`}
+            className={`bg-base-100 flex justify-end md:flex-row pt-8 pb-4 px-4 gap-0 md:gap-10 w-screen md:justify-between md:px-20`}
           >
             {isMobile ? (
               <div></div>
             ) : (
-              <div className="flex-row">
-                <ul className="menu menu-horizontal whitespace-nowrap text-2xl font-['Gilroy'] font-light text-white w-full px-1 flex-row inline-flex gap-6">
-                  <li className="self-center hover:text-purple-600">
-                    <Link href="/">Overview</Link>
-                  </li>
-                  <li className="self-center hover:text-purple-600 whitespace-nowrap text-2xl font-['Gilroy'] font-light text-white w-full">
-                    <Link href="/serverbrowser">Events</Link>
-                  </li>
-                  <li className="self-center hover:text-purple-600 whitespace-nowrap text-2xl font-['Gilroy'] font-light text-white w-full">
-                    <Link href="https://portalize.gitbook.io/portalize/introduction/welcome-to-portalize">All Places</Link>
-                  </li>
-                  <li className="self-center hover:text-purple-600 whitespace-nowrap text-2xl font-['Gilroy'] font-light text-white w-full">
-                    <Link href="">Most Popular</Link>
-                  </li>
-                  <li>
+              <div className="flex-row flex items-center w-screen">
+                <ul className="text-2xl font-['Gilroy'] font-light text-white w-full px-1 flex flex-row justify-between gap-10">
+                  <div className="flex flex-row gap-16">
+                    <li className="self-center hover:text-purple-600">
+                      <Link href="/">Overview</Link>
+                    </li>
+                    <li className="self-center hover:text-purple-600 whitespace-nowrap text-2xl font-['Gilroy'] font-light text-white w-full">
+                      <Link href="/serverbrowser">Events</Link>
+                    </li>
+                    <li className="self-center hover:text-purple-600 whitespace-nowrap text-2xl font-['Gilroy'] font-light text-white w-full">
+                      <Link href="/all-places">All Places</Link>
+                    </li>
+                    <li className="self-center hover:text-purple-600 whitespace-nowrap text-2xl font-['Gilroy'] font-light text-white w-full">
+                      <Link href="">Most Popular</Link>
+                    </li>
+                  </div>
+                  <li className="w-full">
                     <SearchBar onSearch={handleSearch} />
                   </li>
                 </ul>
