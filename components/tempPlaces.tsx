@@ -21,8 +21,8 @@ const TempPlaces: React.FC<TempPlacesProps> = ({ title, backgroundImage, total }
     <div
       className={`${
         expanded
-          ? 'bg-[url(https://file.rendit.io/n/2t7HTrwbmVsETD9cxXcj.png)] bg-no-repeat bg-cover flex flex-col gap-16 w-full h-[603px] px-8 py-12 rounded-xl'
-          : 'flex flex-row justify-end w-full h-64 bg-no-repeat bg-cover items-end pb-4 px-8 rounded-xl'
+          ? 'bg-[url(https://file.rendit.io/n/2t7HTrwbmVsETD9cxXcj.png)] bg-no-repeat bg-cover flex flex-col gap-16 w-full h-[603px] px-8 py-12 rounded-xl cursor-pointer'
+          : 'flex flex-row justify-end w-full h-64 bg-no-repeat bg-cover items-end pb-4 px-8 rounded-xl cursor-pointer'
       }`}
       style={divStyle}
       onClick={handleToggle}

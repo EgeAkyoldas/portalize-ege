@@ -82,10 +82,10 @@ const PortalNav = () => {
                 <ul className="text-2xl font-['Gilroy'] font-light text-white w-full px-1 flex flex-row justify-between gap-10">
                   <div className="flex flex-row gap-16">
                     <li className="self-center hover:text-purple-600">
-                      <Link href="/">Overview</Link>
+                      <Link href="/serverbrowser">Overview</Link>
                     </li>
                     <li className="self-center hover:text-purple-600 whitespace-nowrap text-2xl font-['Gilroy'] font-light text-white w-full">
-                      <Link href="/serverbrowser">Events</Link>
+                      <Link href="/events">Events</Link>
                     </li>
                     <li className="self-center hover:text-purple-600 whitespace-nowrap text-2xl font-['Gilroy'] font-light text-white w-full">
                       <Link href="/all-places">All Places</Link>
