@@ -5,6 +5,7 @@ import FeaturedSlider from '../components/featuredslider';
 import FeaturedEvent from '../components/featuredEvent';
 import PublicSpaces from '../components/publicSpaces';
 import PortalNav from '../components/portalNav';
+import Link from "next/link";
 
 
 
@@ -19,7 +20,9 @@ const PortalizeSB = ({data}) => {
             <PortalNav/>
           </div>
             <div className=''>
+              <Link href="/place">
                 <GameSlider/>
+            </Link>
             </div>
             <div className=' h-fit '>
               <h2 className='relative text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-5xl text-center 2xl:text-left 2xl:pl-14  mb-7'>Continue</h2>

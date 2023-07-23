@@ -4,7 +4,7 @@ import Places from '../components/places';
 import Tags from '../components/tags';
 import SearchBar from '../components/SearchBar';
 import AgeSlider from '../components/AgeSlider';
-import EventCard from '../components/Event'; // Update the import for the EventCard component
+import EventCard from '../components/event'; 
 import { InferGetServerSidePropsType, GetServerSideProps } from 'next';
 import PortalNav from '../components/portalNav';
 
@@ -53,9 +53,9 @@ const Events = ({ repo }: InferGetServerSidePropsType<typeof getServerSideProps>
   return (
     <Fragment>
       <Navbar />
-      <main className="overflow-hidden pt-8 px-12 mb-14">
+      <main className="overflow-hidden mb-14">
         <PortalNav/>
-        <div className="flex flex-col gap-10 px-12">
+        <div className="flex flex-col gap-10  px-4 md:px-12">
           {placesData.map((place) => (
             <Places
               key={place.id}
